@@ -1,0 +1,374 @@
+{
+  "holdout_steps": 360,
+  "n_folds": 4,
+  "step_size": 360,
+  "cold_start_level": "code_sub_code",
+  "selected_baselines": [
+    "smoothed_stable_horizon_blend_last_target_recent_delta_v1",
+    "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1"
+  ],
+  "canonical_score_name": "aggregate_overall_score",
+  "folds": [
+    {
+      "name": "fold_01_train_2161_valid_2162_2521",
+      "train_end_ts": 2161,
+      "validation_start_ts": 2162,
+      "validation_end_ts": 2521,
+      "train_rows": 2878503,
+      "validation_rows": 617239,
+      "cold_start_rows": 465700,
+      "cold_start_rate": 0.754488941884748,
+      "coverage": {
+        "code_sub_code": {
+          "columns": [
+            "code",
+            "sub_code"
+          ],
+          "train_unique_keys": 1036,
+          "validation_unique_keys": 295,
+          "unseen_validation_keys": 200,
+          "unseen_validation_rows": 465700,
+          "total_validation_rows": 617239,
+          "unseen_validation_row_rate": 0.754488941884748
+        },
+        "code_sub_category_horizon": {
+          "columns": [
+            "code",
+            "sub_category",
+            "horizon"
+          ],
+          "train_unique_keys": 460,
+          "validation_unique_keys": 460,
+          "unseen_validation_keys": 0,
+          "unseen_validation_rows": 0,
+          "total_validation_rows": 617239,
+          "unseen_validation_row_rate": 0.0
+        }
+      },
+      "results": {
+        "smoothed_stable_horizon_blend_last_target_recent_delta_v1": {
+          "overall_score": 0.24439047219690208,
+          "overall_error_sum": 41087829.91146779,
+          "overall_denom_sum": 43697752.598333456,
+          "overall_ratio": 0.9402732970993752,
+          "overall_clipped_ratio": 0.9402732970993752,
+          "cold_start_rows": 465700,
+          "warm_start_rows": 151539,
+          "cold_start_score": 0.2736008573476292,
+          "cold_start_error_sum": 26891212.3794989,
+          "cold_start_denom_sum": 29067100.81943441,
+          "cold_start_ratio": 0.9251425708586423,
+          "warm_start_score": 0.17223847128611783,
+          "warm_start_error_sum": 14196617.531968895,
+          "warm_start_denom_sum": 14630651.77889904,
+          "warm_start_ratio": 0.9703339090090212
+        },
+        "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1": {
+          "overall_score": 0.24538588247556348,
+          "overall_error_sum": 41066526.01528708,
+          "overall_denom_sum": 43697752.598333456,
+          "overall_ratio": 0.939785768681689,
+          "overall_clipped_ratio": 0.939785768681689,
+          "cold_start_rows": 465700,
+          "warm_start_rows": 151539,
+          "cold_start_score": 0.2736008573476292,
+          "cold_start_error_sum": 26891212.3794989,
+          "cold_start_denom_sum": 29067100.81943441,
+          "cold_start_ratio": 0.9251425708586423,
+          "warm_start_score": 0.17641486599173986,
+          "warm_start_error_sum": 14175313.63578818,
+          "warm_start_denom_sum": 14630651.77889904,
+          "warm_start_ratio": 0.9688777950571165
+        }
+      }
+    },
+    {
+      "name": "fold_02_train_2521_valid_2522_2881",
+      "train_end_ts": 2521,
+      "validation_start_ts": 2522,
+      "validation_end_ts": 2881,
+      "train_rows": 3495742,
+      "validation_rows": 627814,
+      "cold_start_rows": 481833,
+      "cold_start_rate": 0.7674773101587413,
+      "coverage": {
+        "code_sub_code": {
+          "columns": [
+            "code",
+            "sub_code"
+          ],
+          "train_unique_keys": 1236,
+          "validation_unique_keys": 302,
+          "unseen_validation_keys": 209,
+          "unseen_validation_rows": 481833,
+          "total_validation_rows": 627814,
+          "unseen_validation_row_rate": 0.7674773101587413
+        },
+        "code_sub_category_horizon": {
+          "columns": [
+            "code",
+            "sub_category",
+            "horizon"
+          ],
+          "train_unique_keys": 460,
+          "validation_unique_keys": 460,
+          "unseen_validation_keys": 0,
+          "unseen_validation_rows": 0,
+          "total_validation_rows": 627814,
+          "unseen_validation_row_rate": 0.0
+        }
+      },
+      "results": {
+        "smoothed_stable_horizon_blend_last_target_recent_delta_v1": {
+          "overall_score": 0.09829098452471073,
+          "overall_error_sum": 45858309.37580493,
+          "overall_denom_sum": 46305673.93907597,
+          "overall_ratio": 0.9903388823611631,
+          "overall_clipped_ratio": 0.9903388823611631,
+          "cold_start_rows": 481833,
+          "warm_start_rows": 145981,
+          "cold_start_score": 0.09287864834105512,
+          "cold_start_error_sum": 33447275.178801544,
+          "cold_start_denom_sum": 33738316.85680003,
+          "cold_start_ratio": 0.9913735566823386,
+          "warm_start_score": 0.1115293840247441,
+          "warm_start_error_sum": 12411034.19700338,
+          "warm_start_denom_sum": 12567357.082275942,
+          "warm_start_ratio": 0.9875611964990612
+        },
+        "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1": {
+          "overall_score": 0.09641555232612196,
+          "overall_error_sum": 45875218.30515722,
+          "overall_denom_sum": 46305673.93907597,
+          "overall_ratio": 0.9907040412696488,
+          "overall_clipped_ratio": 0.9907040412696488,
+          "cold_start_rows": 481833,
+          "warm_start_rows": 145981,
+          "cold_start_score": 0.09287864834105512,
+          "cold_start_error_sum": 33447275.178801544,
+          "cold_start_denom_sum": 33738316.85680003,
+          "cold_start_ratio": 0.9913735566823386,
+          "warm_start_score": 0.10532492238930684,
+          "warm_start_error_sum": 12427943.126355674,
+          "warm_start_denom_sum": 12567357.082275942,
+          "warm_start_ratio": 0.9889066607236865
+        }
+      }
+    },
+    {
+      "name": "fold_03_train_2881_valid_2882_3241",
+      "train_end_ts": 2881,
+      "validation_start_ts": 2882,
+      "validation_end_ts": 3241,
+      "train_rows": 4123556,
+      "validation_rows": 607981,
+      "cold_start_rows": 456245,
+      "cold_start_rate": 0.7504264113516705,
+      "coverage": {
+        "code_sub_code": {
+          "columns": [
+            "code",
+            "sub_code"
+          ],
+          "train_unique_keys": 1445,
+          "validation_unique_keys": 300,
+          "unseen_validation_keys": 198,
+          "unseen_validation_rows": 456245,
+          "total_validation_rows": 607981,
+          "unseen_validation_row_rate": 0.7504264113516705
+        },
+        "code_sub_category_horizon": {
+          "columns": [
+            "code",
+            "sub_category",
+            "horizon"
+          ],
+          "train_unique_keys": 460,
+          "validation_unique_keys": 460,
+          "unseen_validation_keys": 0,
+          "unseen_validation_rows": 0,
+          "total_validation_rows": 607981,
+          "unseen_validation_row_rate": 0.0
+        }
+      },
+      "results": {
+        "smoothed_stable_horizon_blend_last_target_recent_delta_v1": {
+          "overall_score": 0.07513238148041314,
+          "overall_error_sum": 47899954.95475442,
+          "overall_denom_sum": 48171879.17904381,
+          "overall_ratio": 0.9943551252530817,
+          "overall_clipped_ratio": 0.9943551252530817,
+          "cold_start_rows": 456245,
+          "warm_start_rows": 151736,
+          "cold_start_score": 0.11863826150081143,
+          "cold_start_error_sum": 32979321.65773929,
+          "cold_start_denom_sum": 33450133.527874295,
+          "cold_start_ratio": 0.9859249629080651,
+          "warm_start_score": 0.0,
+          "warm_start_error_sum": 14920633.29701513,
+          "warm_start_denom_sum": 14721745.651169512,
+          "warm_start_ratio": 1.0135097868526086
+        },
+        "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1": {
+          "overall_score": 0.07452418811203598,
+          "overall_error_sum": 47904339.56561188,
+          "overall_denom_sum": 48171879.17904381,
+          "overall_ratio": 0.9944461453862419,
+          "overall_clipped_ratio": 0.9944461453862419,
+          "cold_start_rows": 456245,
+          "warm_start_rows": 151736,
+          "cold_start_score": 0.11863826150081143,
+          "cold_start_error_sum": 32979321.65773929,
+          "cold_start_denom_sum": 33450133.527874295,
+          "cold_start_ratio": 0.9859249629080651,
+          "warm_start_score": 0.0,
+          "warm_start_error_sum": 14925017.907872595,
+          "warm_start_denom_sum": 14721745.651169512,
+          "warm_start_ratio": 1.013807619117977
+        }
+      }
+    },
+    {
+      "name": "fold_04_train_3241_valid_3242_3601",
+      "train_end_ts": 3241,
+      "validation_start_ts": 3242,
+      "validation_end_ts": 3601,
+      "train_rows": 4731537,
+      "validation_rows": 605877,
+      "cold_start_rows": 472479,
+      "cold_start_rate": 0.7798265984680058,
+      "coverage": {
+        "code_sub_code": {
+          "columns": [
+            "code",
+            "sub_code"
+          ],
+          "train_unique_keys": 1643,
+          "validation_unique_keys": 303,
+          "unseen_validation_keys": 213,
+          "unseen_validation_rows": 472479,
+          "total_validation_rows": 605877,
+          "unseen_validation_row_rate": 0.7798265984680058
+        },
+        "code_sub_category_horizon": {
+          "columns": [
+            "code",
+            "sub_category",
+            "horizon"
+          ],
+          "train_unique_keys": 460,
+          "validation_unique_keys": 460,
+          "unseen_validation_keys": 0,
+          "unseen_validation_rows": 0,
+          "total_validation_rows": 605877,
+          "unseen_validation_row_rate": 0.0
+        }
+      },
+      "results": {
+        "smoothed_stable_horizon_blend_last_target_recent_delta_v1": {
+          "overall_score": 0.09859089455577817,
+          "overall_error_sum": 41747525.1032164,
+          "overall_denom_sum": 42157301.00339469,
+          "overall_ratio": 0.9902798355106914,
+          "overall_clipped_ratio": 0.9902798355106914,
+          "cold_start_rows": 472479,
+          "warm_start_rows": 133398,
+          "cold_start_score": 0.10367271356314597,
+          "cold_start_error_sum": 31232612.334537074,
+          "cold_start_denom_sum": 31571948.634158798,
+          "cold_start_ratio": 0.9892519684624539,
+          "warm_start_score": 0.08157475582288139,
+          "warm_start_error_sum": 10514912.768679328,
+          "warm_start_denom_sum": 10585352.369235896,
+          "warm_start_ratio": 0.9933455592124373
+        },
+        "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1": {
+          "overall_score": 0.10489692945387219,
+          "overall_error_sum": 41693428.79894052,
+          "overall_denom_sum": 42157301.00339469,
+          "overall_ratio": 0.9889966341911494,
+          "overall_clipped_ratio": 0.9889966341911494,
+          "cold_start_rows": 472479,
+          "warm_start_rows": 133398,
+          "cold_start_score": 0.10367271356314597,
+          "cold_start_error_sum": 31232612.334537074,
+          "cold_start_denom_sum": 31571948.634158798,
+          "cold_start_ratio": 0.9892519684624539,
+          "warm_start_score": 0.10846625122838616,
+          "warm_start_error_sum": 10460816.464403443,
+          "warm_start_denom_sum": 10585352.369235896,
+          "warm_start_ratio": 0.9882350723444606
+        }
+      }
+    }
+  ],
+  "test_reference": {
+    "code_sub_code": {
+      "columns": [
+        "code",
+        "sub_code"
+      ],
+      "train_unique_keys": 1856,
+      "validation_unique_keys": 557,
+      "unseen_validation_keys": 460,
+      "unseen_validation_rows": 1289694,
+      "total_validation_rows": 1447107,
+      "unseen_validation_row_rate": 0.8912222800387255
+    },
+    "code_sub_category_horizon": {
+      "columns": [
+        "code",
+        "sub_category",
+        "horizon"
+      ],
+      "train_unique_keys": 460,
+      "validation_unique_keys": 460,
+      "unseen_validation_keys": 0,
+      "unseen_validation_rows": 0,
+      "total_validation_rows": 1447107,
+      "unseen_validation_row_rate": 0.0
+    }
+  },
+  "aggregate": {
+    "smoothed_stable_horizon_blend_last_target_recent_delta_v1": {
+      "aggregate_overall_score": 0.1439924990362292,
+      "aggregate_overall_error_sum": 176593619.34524354,
+      "aggregate_overall_denom_sum": 180332606.71984792,
+      "aggregate_overall_ratio": 0.9792661602213015,
+      "mean_fold_overall_score": 0.12910118318945102,
+      "std_fold_overall_score": 0.06723912137294742,
+      "aggregate_cold_start_score": 0.16011472026590057,
+      "aggregate_cold_start_error_sum": 124550421.5505768,
+      "aggregate_cold_start_denom_sum": 127827499.83826753,
+      "aggregate_warm_start_score": 0.0937945230982502,
+      "aggregate_warm_start_error_sum": 52043197.79466674,
+      "aggregate_warm_start_denom_sum": 52505106.88158039,
+      "mean_fold_cold_start_score": 0.14719762018816043,
+      "mean_fold_warm_start_score": 0.09133565278343583,
+      "total_validation_rows": 2458911,
+      "total_cold_start_rows": 1876257,
+      "total_warm_start_rows": 582654
+    },
+    "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1": {
+      "aggregate_overall_score": 0.14503061028835662,
+      "aggregate_overall_error_sum": 176539512.6849967,
+      "aggregate_overall_denom_sum": 180332606.71984792,
+      "aggregate_overall_ratio": 0.9789661220793868,
+      "mean_fold_overall_score": 0.1303056380918984,
+      "std_fold_overall_score": 0.06735943363242405,
+      "aggregate_cold_start_score": 0.16011472026590057,
+      "aggregate_cold_start_error_sum": 124550421.5505768,
+      "aggregate_cold_start_denom_sum": 127827499.83826753,
+      "aggregate_warm_start_score": 0.09913584303613802,
+      "aggregate_warm_start_error_sum": 51989091.13441989,
+      "aggregate_warm_start_denom_sum": 52505106.88158039,
+      "mean_fold_cold_start_score": 0.14719762018816043,
+      "mean_fold_warm_start_score": 0.09755150990235821,
+      "total_validation_rows": 2458911,
+      "total_cold_start_rows": 1876257,
+      "total_warm_start_rows": 582654
+    }
+  },
+  "best_baseline": "smoothed_stable_horizon_blend_last_target_recent_delta_k7_v1",
+  "best_score": 0.14503061028835662
+}

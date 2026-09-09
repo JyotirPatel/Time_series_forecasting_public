@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+outputs/
+artifacts/
+data/
+.DS_Store
+.coverage
+.mypy_cache/
+*:Zone.Identifier
